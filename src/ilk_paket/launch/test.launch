@@ -1,0 +1,38 @@
+<launch>
+<!--
+<node pkg="ilk_paket" name="srv_ExServer" type="srv_ExServer" output="screen"/>
+<node pkg="ilk_paket" name="srv_ExClient" type="srv_ExClient" args="$(arg sayi1) $(arg sayi2)" output="screen" />
+
+
+<group ns="msg_ex">
+<node pkg="ilk_paket" name="publisher" type="publisher"/>
+
+<node pkg="ilk_paket" name="subscriber" type="subscriber"/>
+
+</group>
+
+
+    <remap from="msg_time" to="denyo"/>
+</node>
+-->
+
+<group ns="drone">
+<node pkg="ilk_paket" name="Drone_Pub" type="Drone_Pub" respawn="true"/>
+<node pkg="ilk_paket" name="Drone_Sub" type="Drone_Sub" respawn="true"/>
+</group>
+<!--
+<node pkg="ilk_paket" name="kelimeler_Client_Node" type="kelimeler_Client_Node"/>
+<node pkg="ilk_paket" name="kelimeler_Server_Node" type="kelimeler_Server_Node"/>
+
+    
+
+
+<group ns="Action_Ex">
+<arg name="goal"/>
+<node pkg="ilk_paket" name="ros_Action_Client_Example" args="$(arg goal)" type="ros_Action_Client_Example"/>
+<node pkg="ilk_paket" name="ros_Action_Server_Example" type="ros_Action_Server_Example"/>
+</group>
+
+-->
+
+</launch>

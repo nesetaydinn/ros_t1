@@ -1,0 +1,15 @@
+(cl:defpackage ilk_paket-srv
+  (:use )
+  (:export
+   "KELIMESAYACI"
+   "<KELIMESAYACI-REQUEST>"
+   "KELIMESAYACI-REQUEST"
+   "<KELIMESAYACI-RESPONSE>"
+   "KELIMESAYACI-RESPONSE"
+   "TOPLAM"
+   "<TOPLAM-REQUEST>"
+   "TOPLAM-REQUEST"
+   "<TOPLAM-RESPONSE>"
+   "TOPLAM-RESPONSE"
+  ))
+
